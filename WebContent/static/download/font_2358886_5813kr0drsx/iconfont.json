@@ -1,0 +1,156 @@
+{
+  "id": "2358886",
+  "name": "MyDiary",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3887020",
+      "name": "日记本 diary",
+      "font_class": "-top-diary2",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7466500",
+      "name": "书本、标签、记录",
+      "font_class": "top-diary",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "689261",
+      "name": "类目 品类 分类 类别.2",
+      "font_class": "category",
+      "unicode": "e7f8",
+      "unicode_decimal": 59384
+    },
+    {
+      "icon_id": "2071579",
+      "name": "填写日报",
+      "font_class": "write",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "6542384",
+      "name": "ico_总库管理_进出日记查询",
+      "font_class": "diary",
+      "unicode": "e8cd",
+      "unicode_decimal": 59597
+    },
+    {
+      "icon_id": "3743442",
+      "name": "2日记",
+      "font_class": "diary1",
+      "unicode": "e766",
+      "unicode_decimal": 59238
+    },
+    {
+      "icon_id": "10868928",
+      "name": "霾",
+      "font_class": "haze",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "13768018",
+      "name": "阴天",
+      "font_class": "cloudy",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "1314409",
+      "name": "雨天",
+      "font_class": "rain",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "5126358",
+      "name": "多云",
+      "font_class": "cloud",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "8937060",
+      "name": "雾",
+      "font_class": "fog",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "11091467",
+      "name": "晴",
+      "font_class": "sunny",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "19670908",
+      "name": "下雪",
+      "font_class": "snow",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "19751507",
+      "name": "下箭头",
+      "font_class": "arrow-right",
+      "unicode": "eb6e",
+      "unicode_decimal": 60270
+    },
+    {
+      "icon_id": "4175511",
+      "name": "下箭头",
+      "font_class": "arrow-bottom",
+      "unicode": "eb6d",
+      "unicode_decimal": 60269
+    },
+    {
+      "icon_id": "9148961",
+      "name": "列表",
+      "font_class": "list",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "3590935",
+      "name": "管理员",
+      "font_class": "admin",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "3786926",
+      "name": "系统",
+      "font_class": "settings",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "7533283",
+      "name": "用户",
+      "font_class": "user",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11082522",
+      "name": "首页",
+      "font_class": "index",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "16648577",
+      "name": "退出",
+      "font_class": "login-out",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}

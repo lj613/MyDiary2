@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+html, body {
+	font-family: Arial;
+	height: 100%;
+	/* 取消y轴的滚动条 */
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+.l {
+	float: left;
+}
+
+.r {
+	float: right;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#main {
+	overflow: hidden;
+	height: calc(100% - 50px);
+	/*  height: calc(100% - 85px - 50px); */
+	background-color: #ffffff;
+}
+
+#main .main_container {
+	height: 100%;
+	overflow: auto;
+}
+
+#projectTitle {
+	/* width: 100%; */
+	height: 54px;
+	background-color: #f1f9fc;
+	border-top: 1px solid #e0eaef;
+	border-bottom: 1px solid #dbe7ed;
+}
+
+#projectTitle .projectTitle_text {
+	margin: 21px 0 0 22px;
+	color: #333333;
+}
+
+#projectTitle .projectTitle_text h2 {
+	font-size: 24px;
+	line-height: 25px;
+}
+
+#projectTitle .projectTitle_text p {
+	font-size: 14px;
+	line-height: 30px;
+	margin: 10px 0 13px 0;
+}
+
+#projectTitle .projectTitle_text span {
+	color: #999999;
+}
+
+#projectTitle .projectTitle_text span.iconfont {
+	font-size: 22px;
+	color: #cccccc;
+	margin-left: 30px;
+}
+
+#projectTitle .projectTitle_img img {
+	width: 190px;
+	height: 149px;
+	margin: 20px 10px 0 0;
+}
+
+#projectList .projectList_cons {
+	margin: 20px;
+}
+
+/* #projectList .projectList_cons>div {
+	display: none;
+} */
+
+/* #projectList .projectList_cons>div.show {
+	display: block;
+} */
+
+#projectList .show button{
+	margin-right:10px;
+}
+#projectList .sp_upload1, #projectList .sp_upload2 {
+	width: 110px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#projectList .sp_upload1 input, #projectList .sp_upload2 input {
+	display: none;
+}
+
+#projectList .sp_upload1 label, #projectList .sp_upload2 label {
+	cursor: pointer;
+}
+
+#projectList .sp_upload1 {
+	background-color: #5fd15c;
+}
+
+#projectList .sp_upload2 {
+	background-color: #34c1da;
+	margin-left: 20px;
+}
+
+#projectList .iconfont {
+	margin-left: 7px;
+	font-size: 16px;
+}
+
+#projectList .sp_search {
+	width: 288px;
+	height: 40px;
+	border: 1px solid #dbe7ed;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+/* #projectList .sp_search input {
+	border: none;
+	width: 173px;
+	height: 100%;
+	color: #999999;
+	font-size: 14px;
+	text-indent: 9px;
+	position: relative;
+	top: -1px;
+	outline: none;
+} */
+#projectList .sp_search input {
+	border: none;
+	width: 210px;
+	height:36px;
+	padding:0 9px;
+	/* height: 100%; */
+	color: #999999;
+	font-size: 14px;
+	position: relative;
+	top: -1px;
+	/* 去掉默认的边框 */
+	outline: none;
+}
+
+
+
+/* #projectList .sp_search button {
+	width: 32px;
+	height: 32px;
+	border: none;
+	border-left: 1px solid #dbe7ed;
+	background-image: linear-gradient(#fcfdfd, #f1f9fc);
+	cursor: pointer;
+} */
+
+/* #projectList .sp_search span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #a1c6d4;
+} */
+
+#projectList .sp_table {
+	clear: both;
+	width: 100%;
+	border: 1px solid #dbe7ed;
+	font-size: 12px;
+	/* 合并表格边框 */
+	border-collapse: collapse;
+	/* 由于使用了浮动  使用margin-top会出现塌陷问题 这里采用定位*/
+	position: relative;
+	top: 20px;
+}
+
+#projectList .sp_table tr {
+	height: 32px;
+	border-bottom: 1px solid #e7eff3;
+}
+
+#projectList .sp_table tr:hover {
+	background-color: #f1f9fc;
+}
+
+#projectList .sp_table th {
+	border-right: 1px solid #dbe7ed;
+	color: #666666;
+	font-weight: normal;
+	text-align: left;
+	text-indent: 12px;
+	background-color: #f1f9fc;
+}
+
+#projectList .sp_table th:first-child, #projectList .sp_table td:first-child
+	{
+	text-align: center;
+	text-indent: 0;
+}
+
+#projectList .sp_table td {
+	text-indent: 12px;
+}
+
+#projectList .sp_table .word {
+	margin-right: 13px;
+	color: #0173ca;
+}
+
+#projectList .sp_table .up {
+	color: #3da2f0;
+}
+
+#projectList .sp_table .del {
+	color: #d94141;
+	margin-left: 10px;
+}
+
+/* .sp_footer {
+	height: 50px;
+	border: 1px solid #dbe7ed;
+	margin-top:10px;
+	overflow: hidden;
+	padding:none;
+} */
+
+.sp_footer #page_info{
+	margin-top:25px;
+	font-size:16px;
+}
+
+
+
+
+
+/* #projectList .sp_remove, #projectList .sp_download {
+	width: 78px;
+	height: 24px;
+	border: 1px solid #c9e4f1;
+	border-radius: 3px;
+	background-image: linear-gradient(#f7fcff, #e7f4fa);
+	font-size: 12px;
+	color: #1884ba;
+	margin-top: 18px;
+	cursor: pointer;
+} */
+
+/* #projectList .sp_remove {
+	margin-right: 15px;
+	margin-left: 22px;
+} */
+
+/* #projectList .sp_page {
+	解决a标签间的空隙
+	font-size: 0;
+	line-height: 24px;
+	margin: 22px 18px 0 0;
+} */
+
+/* #projectList .sp_page a {
+	border: 1px solid #e6e6e6;
+	padding: 6px 9px;
+	font-size: 12px;
+	margin-left: 10px;
+} */
+
+/* #projectList .sp_page a.active {
+	border: 1px solid #3797e0;
+	background-color: #42adff;
+	color: white;
+} */
+/* 模态框居中样式 */
+/* .modal {
+	display: table;
+	width: 500px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.modal-dialog {
+	display: table-cell;
+	vertical-align: middle;
+} */

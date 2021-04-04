@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 暂时不需做任何配置 -->
+	<plugins>
+	    <plugin interceptor="com.github.pagehelper.PageInterceptor">
+	        <!-- 分页参数合理化  当为首页时再点击上一页就还是跳转到首页  当为末页时再点击下一页就还是跳转到末页 -->
+	        <property name="reasonable" value="true"/>
+	    </plugin>
+	        
+	</plugins>
+</configuration>

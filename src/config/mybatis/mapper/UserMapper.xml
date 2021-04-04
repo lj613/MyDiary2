@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.diary.dao.UserDao">
+  	<select id="findByUserName" parameterType="String" resultType="User">
+  		select * from user where username = #{username}
+  	</select>
+  	<select id="findById" parameterType="Integer" resultType="User">
+  		select * from user where id = #{id}
+  	</select>
+  	<update id="add" parameterType="User">  <!-- insert-->
+  		insert into user(id,un,username,password,sex,photo,signature) values(null,#{un},#{username},#{password},#{sex},#{photo},#{signature})
+  	</update>
+  	<select id="findList"  resultType="User">
+  		select * from user
+  	</select>
+  	<update id="edit" parameterType="User">
+  		update user set username = #{username},password = #{password},sex=#{sex},photo = #{photo},signature=#{signature} where id = #{id}
+  	</update>
+  	<delete id="deleteById" parameterType="Integer">
+  		delete from user where id = #{id}
+  	</delete>
+  	<delete id="deleteAll" parameterType="String">
+  		delete from user where id in (${value})
+  	</delete>
+  	<select id="searchBywords" parameterType="String" resultType="User">
+  	<!-- select from admin where username like #{keywords} -->
+  		select * from user where username LIKE CONCAT(CONCAT('%', #{keywords}), '%') 
+  	</select>
+  	<select id="getNumBySex" parameterType="String" resultType="Integer">
+  	    <!-- select s.sex,count(s.sex) from student s GROUP BY sex; -->
+  		select count(sex) from user where sex = #{sex}
+  		<!-- select count(sex) from user where sex ='男'; -->
+  	</select>
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.diary.dao.DiaryTypeDao">
+  	<select id="findByTypeName" parameterType="String" resultType="DiaryType">
+  		select * from diarytype where typeName = #{typeName}
+  	</select>
+  	<select id="findById" parameterType="Integer" resultType="DiaryType">
+  		select * from diarytype where diaryTypeId = #{diaryTypeId}
+  	</select>
+  	<insert id="add" parameterType="DiaryType">  <!-- insert-->
+  		insert into diarytype(diaryTypeId,typeName) values(null,#{typeName})
+  	</insert>
+  	<select id="findList"  resultType="DiaryType">
+  		select * from diarytype
+  	</select>
+  	<update id="edit" parameterType="DiaryType">
+  		update diarytype set typeName = #{typeName} where diaryTypeId = #{diaryTypeId}
+  	</update>
+  	<delete id="deleteById" parameterType="Integer">
+  		delete from diarytype where diaryTypeId = #{diaryTypeId}
+  	</delete>
+  	<delete id="deleteAll" parameterType="String">
+  		delete from diarytype where diaryTypeId in (${value})
+  	</delete>
+  	<select id="getTotalNum" resultType="Integer">
+  		select count(diaryTypeId) from  diarytype
+  	</select>
+</mapper>
